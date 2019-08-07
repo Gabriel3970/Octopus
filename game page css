@@ -1,0 +1,52 @@
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 100px 125px 125px 125px 125px 125px ;
+  grid-template-areas:
+  "d d d d d d d d d d d d d d "
+  "title title title title title title title title title title title title title title"
+  "Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews art art art art art"
+  "Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews art art art art art"
+  "Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews Reviews art art art art art"
+  "r1 r1 r1 r2 r2 r2 r3 r3 r3 sum sum sum sum sum"
+  "r1 r1 r1 r2 r2 r2 r3 r3 r3 sum sum sum sum sum"
+  ;
+
+  /* Style the template for the grid */
+}
+
+/* Making border black */
+
+#title {
+  grid-area: title; 
+}
+
+ 
+
+
+.dash{
+  grid-area: d;
+  background-color: black !important;
+
+}
+.R1{
+  grid-area: r1;
+}
+.R2{
+  grid-area: r2;
+}
+.R3{
+  grid-area: r3;
+  }
+
+.summary{
+  grid-area: sum;
+}
+
+#art{
+  grid-area: art;
+}
+
+.reviews{
+  grid-area: Reviews
+}
