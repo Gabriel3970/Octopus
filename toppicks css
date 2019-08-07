@@ -1,7 +1,7 @@
 .container {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px 100px 200px ;
+  grid-template-rows: auto ;
   border-color: blue;
   grid-template-areas:
   "d d d d d d d d d d d d d d d"
@@ -35,7 +35,7 @@ body{
   color: white;
   display: flex;
   font-size: 2em;
-  justify-content: center;
+  
 }
 
 
@@ -48,8 +48,6 @@ body{
 
 .dash{
   grid-area: d;
-  background-color: black !important;
-  
 }
 
 /*This is the description css*/
@@ -72,18 +70,21 @@ body{
   grid-area: d3;
   background-color: #c5c6c7;
   margin: 5px;
+  font-size: large!important;
 }
 
 .descript4{
   grid-area: d4;
   background-color: #66fcf1;
   margin: 5px;
+  font-size: large!important;
   
   }
   .descript5{
   grid-area: d5;
   background-color: #45a29e;
   margin: 5px;
+  font-size: large!important;
   }
 
 /*this is the top picks css*/
@@ -92,7 +93,7 @@ body{
   grid-area: t1;
   margin: 5px;
   background-color:#0b0c10;
- 
+  font-size: large!important;
 }
 .top2{
   grid-area: t2;
@@ -121,4 +122,8 @@ body{
   animation-name: example!importan;
   animation-duration: 20s!important;
   animation-iteration-count:infinite!important;
+}
+.top1, .top2, .top3, .top4, .top5 > div {  
+  align-item: center;
+  justify-contect: center;
 }
