@@ -1,0 +1,149 @@
+.btn {
+  background-color: #950740;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.btn2 {
+  background-color: #950740;
+  color: white;
+  padding: 12px 15px 11px 15px;
+  font-size: 16px;
+  border: 1px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+/*This will make it so that it will all be in one line*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /*change the color of the list*/
+  min-width: 160px;
+  z-index: 1;
+}
+/*this makes the list scroll down*/
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn:hover, .dropdown:hover .btn {
+  background-color: #6F2232;
+}
+
+.btn2:hover, .dropdown:hover .btn2 {
+  background-color: #6F2232;
+}
+/*when you haver over the home button it changes to a differnt color*/
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  background-color: white;
+
+}
+
+.dashboard{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  border-bottom: 1px solid white;
+  border-Right: 1px solid white;
+  justify-content: space-between;
+}
+
+.dashboard{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}/*it removes a space from the top of the screen from the tab bar*/
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}/* this makes the tab bar look good with being format*/
+
+.topnav .search-container {
+  float: right;
+}/* makes the search bar be on the right side of the screen*/
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+/*This sets the size of the font in the search bar,*/
+/*the position from the top of the screen and the size of*/
+/*the search bar*/
+
+.topnav .search-container button {
+  float: right;
+  padding: 3px 5px 0px 5px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}/*this should put an icon on the right of the search bar*/
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+/*when you hover over the search icon it will highlight it the */
+/*background color*/
+
+@media screen and (max-width: 420px) {
+  .topnav .search-container {
+    float: right;
+  }
+  /*this sets the position for the search bar in the bar*/
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  /*when you minimize the screen it will remove the search bar and icon to look better fitted*/
+  .topnav input[type=text] {
+    border: 10px solid #ccc;  
+  }
+}
