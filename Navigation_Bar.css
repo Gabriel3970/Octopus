@@ -8,6 +8,7 @@
   margin-left: 50px;
   cursor: pointer;
   border-bottom: 1px solid white;
+  float: left;
 }
 
 .btn2 {
@@ -62,8 +63,7 @@
 * {box-sizing: border-box;}
 
 body {
-  margin: 0;
-  background-color: white;
+
 
 }
 
@@ -84,7 +84,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: red;
 }/*it removes a space from the top of the screen from the tab bar*/
 
 .topnav a {
@@ -99,7 +99,10 @@ body {
 }/* this makes the tab bar look good with being format*/
 
 .topnav .search-container {
-  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+
 }/* makes the search bar be on the right side of the screen*/
 
 .topnav input[type=text] {
@@ -147,3 +150,4 @@ body {
     border: 10px solid #ccc;  
   }
 }
+
