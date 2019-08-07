@@ -26,89 +26,64 @@
 /* Making border black */
 body{
   background-color: black;
+  margin: 0px;
 }
+
+.container > div {
+  align-items: center;
+  border: solid grey thin;
+  color: white;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+}
+
+
 #top_picks {
   grid-area: t; 
   /*border: 15px solid #7FFFD4!important;*/
   padding: 10px!important;
   margin: 5px!important;
-  
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
 }
-
- 
-
 
 .dash{
   grid-area: d;
   background-color: black !important;
   
- 
 }
 
 /*This is the description css*/
 
 .descript1{
   grid-area: d1;
-  background-color: #0b0c10!important;
+  background-color: #0b0c10;
   margin: 5px;
   font-size: large!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
  }
+ 
 .descript2{
   grid-area: d2;
-  background-color: #1f2833!important;
+  background-color: #1f2833;
   margin: 5px;
   font-size: large!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
 }
+
 .descript3{
   grid-area: d3;
-  background-color: #c5c6c7!important;
-  margin: 0px;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
+  background-color: #c5c6c7;
+  margin: 5px;
 }
+
 .descript4{
   grid-area: d4;
-  background-color: #66fcf1!important;
+  background-color: #66fcf1;
   margin: 5px;
   
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
   }
   .descript5{
   grid-area: d5;
-  background-color: #45a29e!important;
+  background-color: #45a29e;
   margin: 5px;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
   }
 
 /*this is the top picks css*/
@@ -116,56 +91,34 @@ body{
 .top1{
   grid-area: t1;
   margin: 5px;
-  background-color:#0b0c10!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
+  background-color:#0b0c10;
  
 }
 .top2{
   grid-area: t2;
   margin: 5px;
-  background-color:#1f2833!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
+  background-color:#1f2833;
 }
 .top3{
   grid-area: t3;
   margin: 5px;
-  background-color:#c5c6c7!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
+  background-color:#c5c6c7;
 }
 .top4{
   grid-area: t4;
   margin: 5px;
-  background-color:#66fcf1!important;
-  
-  -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
-  animation-duration: 20s!important;
-  animation-iteration-count:infinite!important;
+  background-color:#66fcf1;
 }
 .top5{
   grid-area: t5;
   margin: 5px;
-  background-color:#45a29e!important;
-  
+  background-color:#45a29e;
+}
+
+.top1, .top2, .top3, .top4, .top5, .descript1, .descript2, .descript3, .descript4, .descript5, #top_picks{
   -webkit-animation-name: example!important; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 20s!important; /* Safari 4.0 - 8.0 */
-  animation-name: example!important;
+  animation-name: example!importan;
   animation-duration: 20s!important;
   animation-iteration-count:infinite!important;
 }
