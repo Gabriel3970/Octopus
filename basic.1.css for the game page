@@ -1,0 +1,9 @@
+/* Selects all div elements where the parent element has a class container AKA all of the individual blocks in the grid */
+.container > div {
+  align-items: center;
+  border: solid grey thin;
+  color: white;
+  display: flex;
+  font-size: 2em;
+
+}
